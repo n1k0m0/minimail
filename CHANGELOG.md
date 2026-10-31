@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Authenticate CI baseline release downloads with the read-only workflow token to avoid shared-runner anonymous GitHub API limits. Continue verifying release signatures, exact tags and pinned application images before running upgrade tests; keep credentials out of Docker builds and installation packages.
+
 ## 0.1.0-rc.22
 
 - Reject redirected calendar writes before changing local event state.
